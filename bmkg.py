@@ -99,16 +99,16 @@ if available_parameters:
         print(parameter)
     
     # Meminta masukan dari pengguna untuk tanggal awal, tanggal akhir, jenis stasiun, dan nomor stasiun
-    start_date_input = input("Masukkan tanggal awal (format: YYYY-MM-DD): ")
-    end_date_input = input("Masukkan tanggal akhir (format: YYYY-MM-DD): ")
+    start_date_input = input("Masukkan tanggal awal (format: DD-MM-YYYY): ")
+    end_date_input = input("Masukkan tanggal akhir (format: DD-MM-YYYY): ")
     jenis_stasiun = input("Masukkan jenis stasiun: ")
     no_stasiun = input("Masukkan nomor stasiun: ")
     provinsi = input("masukan nama provinsi: ")
     kabupaten = input("masukan nama kabupaten: ")
 
     # Melakukan parsing tanggal awal dan akhir
-    start_date = datetime.strptime(start_date_input, "%Y-%m-%d")
-    end_date = datetime.strptime(end_date_input, "%Y-%m-%d")
+    start_date = datetime.strptime(start_date_input, "%d-%m-%Y")
+    end_date = datetime.strptime(end_date_input, "%d-%m-%Y")
 
     # Contoh penggunaan:
     parameters = available_parameters  # Memilih semua parameter yang tersedia
