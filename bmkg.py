@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 # Fungsi untuk login ke situs
 def login(Email, Kata_Sandi):
-    login_url = 'https://dataonline.bmkg.go.id/home'
+    login_url = 'https://dataonline.bmkg.gosteven.id/home'
     session = requests.Session()
     login_data = {
         'Email': Email,
