@@ -1,3 +1,4 @@
+# saya sedang mencari letak kesalahannya dimana setelah di cek saya buat lagi testcase dan ya malah diblok
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
